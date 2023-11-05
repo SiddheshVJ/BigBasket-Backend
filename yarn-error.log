@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Usr\local\node_modules\yarn\bin\yarn.js add express cors body-parser jsonwebtoken @babel/core @babel/register @babel/preset-env dotenv gravitar uuid mongoose
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\mongosh-1.8.0\bin;C:\Program Files\MongoDB\Server\6.0\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\Siddhesh Jadhav\AppData\Roaming\npm;C:\Usr\local;C:\Program Files (x86)\Java\jre-1.8\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Redis\;C:\Users\Siddhesh Jadhav\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\Siddhesh Jadhav\AppData\Local\Programs\Python\Python38\;C:\Users\Siddhesh Jadhav\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Siddhesh Jadhav\AppData\Local\Programs\Python\Python311\;C:\Users\Siddhesh Jadhav\AppData\Local\Microsoft\WindowsApps;C:\Users\Siddhesh Jadhav\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\servlet-api.jar;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin;;C:\Users\Siddhesh Jadhav\AppData\Local\GitHubDesktop\bin;C:\Program Files\nodejs\;C:\Usr\local;C:\Program Files\Java\jdk-17\bin;C:\Program Files (x86)\Java\jre-1.8\bin;C:\Users\Siddhesh Jadhav\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/gravitar: Not found
+      at params.callback [as _callback] (C:\Usr\local\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Usr\local\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (C:\Usr\local\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:514:28)
+      at IncomingMessage.<anonymous> (C:\Usr\local\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:628:28)
+      at IncomingMessage.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "bigbasket-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node start.js",
+      "dev": "nodemon start.js"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
