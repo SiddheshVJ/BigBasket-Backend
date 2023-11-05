@@ -69,25 +69,28 @@ router.put('/update/:id', async (req, res) => {
 
     try {
         let product = await Product.findById(productId)
+
         if (!product) {
-            return res.status(401).json({
-                msg: 'Product not exists'
+            return res.status(404).json({
+                msg: "Product not found !!!"
             })
         }
-        // update to database
+
         product = await Product.findByIdAndUpdate(productId, {
             $set: updateProductData
         }, { new: true })
 
         res.status(200).json({
-            msg: 'Product Updated Successfully',
+            result: 'Product updated successfully !!!',
             product: product
         })
+
     } catch (error) {
-        res.send(500).json({
+        res.status(500).json({
             error: error.message
         })
     }
+
 })
 
 // Delete products using id
