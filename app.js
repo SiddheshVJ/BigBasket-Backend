@@ -14,7 +14,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use(express.json()) 
+app.use(express.json())
 
 
 // products routers
@@ -23,7 +23,7 @@ app.use('/products', productsRoute)
 // mongoDb connection
 mongoose.connect(MONGO_DB_URL)
     .then((response) => {
-        console.log("Connected to MongoDB Successfull ")
+        console.log("Connected to MongoDB Successful ")
     })
     .catch((err) => {
         console.error(err)
