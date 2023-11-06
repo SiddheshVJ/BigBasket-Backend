@@ -4,6 +4,7 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import productsRoute from './src/routes/productsRoute'
+import userRoutes from './src/routes/userRoutes'
 
 dotenv.config()
 
@@ -19,6 +20,7 @@ app.use(express.json())
 
 // products routers
 app.use('/products', productsRoute)
+app.use('/user', userRoutes)
 
 // mongoDb connection
 mongoose.connect(MONGO_DB_URL)
